@@ -1,22 +1,40 @@
 class Api::ActorsController < ApplicationController
 
-  def single_actor_action
-    @actor = Actor.find_by(id: 6)
-    render "single_actor.json.jbuilder"
+  def index
+    @actors = Actor.all
+    render "index.json.jbuilder"
   end
 
-  def actor_id
+  def show
+    @actor = Actor.find(params[:id])
+    render "show.json.jbuilder"
+  end
 
-    # id  = params[:id]
-    # @actor = Actor.find_by("id": id)
+  def create
+    @actor = Actor.new(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      known_for: params[:known_for]
+      )
+    @actor.save
+    render "show.json.jbuilder"
+  end
 
-    @actor = Actor.find_by("id": params[:id])
+  def update
+    @actor  = Actor.find(params[:id])
 
-    render "actor_by_id.json.jbuilder"
+    @actor.first_name = params[:first_name] || @actor.first_name
+    @actor.last_name = params[:last_name] || @actor.last_name
+    @actor.known_for = params[:known_for] || @actor.known_for
+    @actor.save
+    render "show.json.jbuilder"
+  end
+
+  def destroy
+    @actor = Actor.find(params[:id])
+    @actor.destroy
+    render json: {message: "The entry was successfully removed."}
   end
 
 end
 
-
-   # id = params[:id]
-   #  @movie = Movie.find_by("id": id)
