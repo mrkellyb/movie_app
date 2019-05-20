@@ -2,6 +2,12 @@ class Api::MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
+
+    if params[:english] == "true"
+      @movies = @movies.where('english = ?', true)
+      # @movies = @movies.find_by_sql("SELECT * FROM movies WHERE english = true")
+    end
+
     render "index.json.jbuilder"
   end
 
