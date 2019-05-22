@@ -5,4 +5,5 @@ json.array! @actors.each do |actor|
   json.gender actor.gender
   json.age actor.age
   json.known_for actor.known_for
+  json.movie_title actor.movie.plot
 end
