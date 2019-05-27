@@ -5,6 +5,7 @@ json.array! @movies.each do |movie|
   json.director movie.director
   json.plot movie.plot
   json.english movie.english
+  json.genre_names movie.genre_names
 end
 
 # json.message "test"
