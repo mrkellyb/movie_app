@@ -18,6 +18,9 @@ Rails.application.routes.draw do
 
     post "/sessions" => "sessions#create"
 
+    post "/movie_genres" => "movie_genres#create"
+    delete "/movie_genres/:id" => "movie_genres#destroy"
+
 
   end
 
