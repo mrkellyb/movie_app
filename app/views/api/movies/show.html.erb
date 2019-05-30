@@ -1,0 +1,18 @@
+<h1>Welcome To The Movie App!</h1>
+
+<p><b>Individual Movie View</b></p>
+<p><b>Title:</b> <%= @movie.title  %><br>
+<b>Year:</b> <%= @movie.year  %><br>
+<b>Director:</b> <%= @movie.director  %><br>
+<b>Plot:</b> <%= @movie.plot  %><br>
+<b>Genre:</b> <%= @movie.genre_names.first  %><br>
+<b>ID Number:</b> <%= @movie.id  %><br>
+</p>
+<hr>
+
+<p>Enjoy this form that doesn't do anything but will break your page if you press the button!</p>
+<form method="POST" action="/page">
+  <label for="name">I Don't Do Anything!</label>
+  <input id="name" type="text" name="page_name" />
+  <input type="submit" value="Break My Page Like Some Kind of Monster!" />
+</form>
