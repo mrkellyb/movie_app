@@ -1,0 +1,17 @@
+.jumbotron-background {
+  background-image: url("https://images.pond5.com/loop-able-animation-film-reels-footage-012336192_prevstill.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*font-weight: bold;*/
+  color: white;
+  font-family: Georgia;
+  text-align: right;
+}
+
+p.lead {
+  font-style: italic;
+}
+
+.card-body {
+  font-family: Georgia;
+}
