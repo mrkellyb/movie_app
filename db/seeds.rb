@@ -19,15 +19,6 @@ Genre.create!([
   {name: "fantasy"}
 ])
 Movie.create!([
-  {title: "Jurassic Park", year: 1993, plot: "Nature finds a way.", director: nil, english: true},
-  {title: "Blade Runner", year: 1982, plot: "Welcome to Dystopia, Harrison Ford!", director: nil, english: true},
-  {title: "The Sting", year: 1973, plot: "Enjoy this Scott Joplin music!", director: nil, english: true},
-  {title: "Birdman", year: 2014, plot: "Shit's about to get weird, possible actual superhero.", director: nil, english: true},
-  {title: "All That Jazz", year: 1979, plot: "I hope you like dance!", director: nil, english: true},
-  {title: "Blade Runner 2049", year: 2017, plot: "Ryan, meet Harrison.", director: nil, english: true},
-  {title: "Body Heat", year: 1981, plot: "Is it hot in here, or is it just me?", director: nil, english: true},
-  {title: "Star Wars", year: 1977, plot: "You won't believe how many more of these there'll be...", director: nil, english: true},
-  {title: "The Shape of Water", year: 2017, plot: "Like watching 'Flipper' on LSD...", director: nil, english: true},
   {title: "Being John Malkovitch", year: 1999, plot: "Shit gets weird.", director: "Spike Jonze", english: true},
   {title: "Diva", year: 1982, plot: "Enjoy this Paris chase scene!", director: "Jean-Jacques Beinix", english: false},
   {title: "Lady Bird", year: 2017, plot: "Can't wait to leave this nothing town!", director: "Greta Gerwig", english: true},
@@ -37,7 +28,16 @@ Movie.create!([
   {title: "Dune", year: 1984, plot: "Spice-y.", director: "David Lynch", english: true},
   {title: "The Graduate", year: 1967, plot: "Good afternoon, Mrs. Robinson.", director: "Mike Nichols", english: true},
   {title: "Mrs. Doubtfire", year: 1993, plot: "Our new housekeeper is so nice!", director: "Chris Columbus", english: true},
-  {title: "Crazy  Stupid Love", year: 2011, plot: "Life is complicated.", director: "Glenn Ficarra", english: true}
+  {title: "Crazy  Stupid Love", year: 2011, plot: "Life is complicated.", director: "Glenn Ficarra", english: true},
+  {title: "The Shape of Water", year: 2017, plot: "Like watching 'Flipper' on LSD...", director: "Guillermo del Toro", english: true},
+  {title: "Star Wars", year: 1977, plot: "You won't believe how many more of these there'll be...", director: "George Lucas", english: true},
+  {title: "Blade Runner 2049", year: 2017, plot: "Ryan, meet Harrison.", director: "Denis Villeneuve", english: true},
+  {title: "All That Jazz", year: 1979, plot: "I hope you like dance!", director: "Bob Fosse", english: true},
+  {title: "Body Heat", year: 1981, plot: "Is it hot in here, or is it just me?", director: "Lawrence Kasdan", english: true},
+  {title: "Jurassic Park", year: 1993, plot: "Nature finds a way.", director: "Steven Spielberg", english: true},
+  {title: "Blade Runner", year: 1982, plot: "Welcome to Dystopia, Harrison Ford!", director: "Ridley Scott", english: true},
+  {title: "The Sting", year: 1973, plot: "Enjoy this Scott Joplin music!", director: "George Roy Hill", english: true},
+  {title: "Birdman", year: 2014, plot: "Shit's about to get weird, possible actual superhero.", director: "Alejandro G. Inarritu", english: true}
 ])
 MovieGenre.create!([
   {genre_id: 4, movie_id: 1},
